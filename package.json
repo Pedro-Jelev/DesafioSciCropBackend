@@ -1,0 +1,35 @@
+{
+  "name": "desafioscicropbackend",
+  "version": "1.0.0",
+  "description": "Desafio técnico referente a oportunidade de estágio",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "build": "sucrase ./src -d ./dist --transforms typescript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pedro-Jelev/DesafioSciCropBackend"
+  },
+  "keywords": [
+    "Desafio Técnico",
+    "SciCrop",
+    "Backend"
+  ],
+  "author": "Pedro Jelev",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-async-errors": "^3.1.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@types/sqlite3": "^3.1.11",
+    "nodemon": "^3.1.9",
+    "sucrase": "^3.35.0",
+    "typescript": "^5.7.2"
+  }
+}
