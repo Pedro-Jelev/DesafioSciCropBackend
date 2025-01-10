@@ -4,7 +4,7 @@ import { PostsController } from "../controllers/PostsController";
 const postsController = new PostsController();
 export const postsRoutes = Router();
 
-postsRoutes.post("/", postsController.create);
+postsRoutes.post("/newpost", postsController.create);
 postsRoutes.get("/", postsController.index);
-postsRoutes.get("/:id", postsController.show);
+postsRoutes.get("/details/:id", postsController.show);
 postsRoutes.patch("/:id", postsController.delete);
